@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  mongodb:
+    image: mongo:latest
+    volumes:
+      - ./data:/data/db
+    environment:
+
+      MONGO_INITDB_DATABASE: django-db
+    ports:
+      - "27017:27017"
+  app:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/task
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb

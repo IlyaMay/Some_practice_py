@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    {% block title %} <title>{{"Магазин 'Солнышко'.Школьная форма"}}</title>{% endblock %}
+    <link type="text/css" rel="stylesheet" href=static/css/style.css>
+</head>
+
+<body>
+{% block page %}
+{{ super() }}
+    <div class="slide">
+    <input type="radio" id="i1" name="images" checked/>
+    <input type="radio" id="i2" name="images"/>
+    <input type="radio" id="i3" name="images"/>
+    <input type="radio" id="i4" name="images"/>
+
+    <div class="slide_img" id="one">
+
+        <img src="static/img/slade/1.jpg">
+
+        <label class="prev" for="i4"><span>&#x2039;</span></label>
+        <label class="next" for="i2"><span>&#x203a;</span></label>
+
+    </div>
+
+    <div class="slide_img" id="two">
+
+        <img src="static/img/slade/2.jpg">
+
+        <label class="prev" for="i1"><span>&#x2039;</span></label>
+        <label class="next" for="i3"><span>&#x203a;</span></label>
+
+    </div>
+
+    <div class="slide_img" id="three">
+        <img src="static/img/slade/3.jpg">
+
+        <label class="prev" for="i2"><span>&#x2039;</span></label>
+        <label class="next" for="i4"><span>&#x203a;</span></label>
+    </div>
+
+    <div class="slide_img" id="four">
+        <img src="static/img/slade/4.jpg">
+
+        <label class="prev" for="i3"><span>&#x2039;</span></label>
+        <label class="next" for="i1"><span>&#x203a;</span></label>
+    </div>
+
+    <div id="nav_slide">
+        <label for="i1" class="dots" id="dot1"></label>
+        <label for="i2" class="dots" id="dot2"></label>
+        <label for="i3" class="dots" id="dot3"></label>
+        <label for="i4" class="dots" id="dot4"></label>
+    </div>
+</div>
+{% endblock %}
+
+</body>
+</html>

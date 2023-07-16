@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+<html>
+<head>
+    {% block title %} <title>{{"Карнавальные костюмы. Фрукты"}}</title>{% endblock %}
+</head>
+<body>
+{% block page %}
+{{ super() }}
+        <div class="fon-karnaval-kategorii">
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/2/1.jpg"></a>
+                    <p1>Костюм Баклажан</p1>
+                    <h1>1.500 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/2/2.jpg"></a>
+                    <p1>Костюм Апельсин</p1>
+                    <h1>1.500 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/2/3.jpg"> </a>
+                    <p1>Костюм Арбуз</p1>
+                    <h1>1.500 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/2/4.jpg"> </a>
+                    <p1>Костюм Груша</p1>
+                    <h1>1.500 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/2/5.jpg"> </a>
+                    <p1>Костюм Редиска</p1>
+                    <h1>1.500 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/2/7.jpg"> </a>
+                    <p1>Костюм Капуста</p1>
+                    <h1>1.200.р</h1>
+                </div>
+        </div>
+{% include 'menu-karnaval.html' %}
+{% endblock %}
+</body>
+</html>

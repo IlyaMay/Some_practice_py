@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+  db:
+    image: postgres:13.0-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - ./com/.env
+  web:
+    build: .
+    restart: always
+    volumes:
+      - static_value:/app/com/static/
+      - media_value:/app/com/media/
+    ports:
+     - "8000:8000"
+    depends_on:
+      - db
+    env_file:
+      - ./com/.env
+
+volumes:
+  postgres_data:
+  static_value:
+  media_value:
+  

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+<html>
+<head>
+    <title>{{"Школьная Форма"}}</title>
+</head>
+<body>
+
+{% block page %}
+{{ super() }}
+        <div class="fon-form">
+
+                <div class="kat-form">
+                    <a href="/Форма для девочек"> <img src="static/img/forma/girl/1.jpg"></a>
+                    <h1>Школьная форма для девочек </h1>
+                </div>
+
+                <div class="kat-form">
+                    <a href="/Форма для мальчиков"> <img src="static/img/forma/men/3.jpg"></a>
+                    <h1>Школьная форма для мальчиков</h1>
+                </div>
+
+                <div class="kat-form">
+                    <a href="/СССP"> <img src="static/img/forma/cccp/4.jpg"></a>
+                    <h1>Школьная Форма СССР</h1>
+                </div>
+
+                <div class="kat-form">
+                    <a href="/Трикотаж"> <img src="static/img/forma/trik/1.jpg"> </a>
+                    <h1>Школьный трикотаж</h1>
+                </div>
+
+                <div class="kat-form">
+                    <a href="/Портфели"> <img src="static/img/port/7.jpg"> </a>
+                    <h1>Портфели</h1>
+                </div>
+
+                 <div class="kat-form">
+                    <a href="/Хор"> <img src="static/img/hor/2.jpg"> </a>
+                    <h1>Хор</h1>
+                </div>
+
+                <div class="kat-form">
+                    <a href="/Карнавальные костюмы"> <img src="static/img/karnaval/3/4.jpg"> </a>
+                    <h1>Карнавальные костюмы</h1>
+                </div>
+        </div>
+{% endblock %}
+</body>
+</html>

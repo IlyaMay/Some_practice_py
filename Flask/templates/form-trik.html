@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+<html lang="en">
+<head>
+    {% block title %} <title>{{"Школьная форма. Школьный трикотаж"}}</title>{% endblock %}
+</head>
+<body>
+{% block page %}
+{{ super() }}
+        <div class="fon-karnaval-kategorii">
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/forma/trik/1.jpg"></a>
+                    <p1>Джемпер бордовый</p1>
+                    <h1>2.000 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/forma/trik/2.jpg"></a>
+                    <p1>Жилет Серый </p1>
+                    <h1>1.500 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/forma/trik/3.jpg"> </a>
+                    <p1>Жилет зеленый</p1>
+                    <h1>1.500 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/forma/trik/4.jpg"> </a>
+                    <p1>Кардиган синий</p1>
+                    <h1>2.000 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/forma/trik/5.jpg"> </a>
+                    <p1>Жилет красный </p1>
+                    <h1>1.500 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/forma/trik/6.jpg"> </a>
+                    <p1>Жилет арт черный</p1>
+                    <h1>1.500 р.</h1>
+                </div>
+        </div>
+
+            {% include 'menu-main.html' %}
+
+{% endblock %}
+</body>
+</html>

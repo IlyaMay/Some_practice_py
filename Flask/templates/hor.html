@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    {% block title %} <title>{{"Хор"}}</title>{% endblock %}
+</head>
+<body>
+
+{% block page %}
+{{ super() }}
+    <div class="picture-hor">
+
+                <div class="towar-hor">
+                    <a href=""> <img src="static/img//hor/1.jpg"></a>
+                    <p>Платье шифон</p>
+                    <h1>3.000 р.</h1>
+                </div>
+
+                <div class="towar-hor">
+                    <a href=""> <img src="static/img/hor/2.jpg"></a>
+                    <p>Платье с длинным рукавом</p>
+                    <h1>3.000 р.</h1>
+                </div>
+
+                <div class="towar-hor">
+                    <a href=""> <img src="static/img/hor/3.jpg"></a>
+                    <p>Платье бархатное</p>
+                    <h1>3.000 р.</h1>
+                </div>
+
+                <div class="towar-hor">
+                    <a href=""> <img src="static/img/hor/4.jpg" > </a>
+                    <p>Концертные костюмы </p>
+                    <h1>3.000 р.</h1>
+                </div>
+
+                <div class="towar-hor">
+                    <a href=""> <img src="static/img/hor/5.jpg" > </a>
+                    <p>Сарафан русский народный </p>
+                    <h1>1.800 р.</h1>
+                </div>
+
+                <div class="towar-hor">
+                    <a href=""> <img src="static/img/hor/6.jpg"> </a>
+                    <p>Сарафан клетка </p>
+                    <h1>2.500.р</h1>
+                </div>
+
+                <div class="towar-hor">
+                    <a href=""> <img src="static/img/hor/7.jpg" ></a>
+                    <p>Сарафан гофре </p>
+                    <h1>2.500 р.</h1>
+                </div>
+
+                <div class="towar-hor">
+                     <a href=""> <img src="static/img/hor/8.jpg"></a>
+                     <p>Сарафан</p>
+                     <h1>1.700р</h1>
+                </div>
+
+                <div class="towar-hor">
+                    <a href=""> <img src="static/img/hor/9.jpg"></a>
+                    <p>Сарафан бархатный </p>
+                    <h1>2.500р</h1>
+                </div>
+
+                <div class="towar-hor">
+                     <a href=""> <img src="static/img/hor/10.jpg"></a>
+                     <p>Юбка макси</p>
+                     <h1>2.000 р.</h1>
+                </div>
+    </div>
+            {% include 'menu-main.html' %}
+
+{% endblock %}
+</body>
+</html>

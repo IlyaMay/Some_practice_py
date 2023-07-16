@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+<head>
+    {% block title %} <title>{{"Карнавальные костюмы. Звери"}}</title>{% endblock %}
+</head>
+<body>
+{% block page %}
+{{ super() }}
+        <div class="fon-karnaval-kategorii">
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/4/1.jpg"></a>
+                    <p1>Цыпочка</p1>
+                    <h1>1.500 р.</h1>
+                </div>
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/4/2.jpg"></a>
+                    <p1>Костюм Пингвина</p1>
+                    <h1>1.100 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/4/3.jpg"> </a>
+                    <p1>Синичка</p1>
+                    <h1>1.300 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/4/4.jpg"> </a>
+                    <p1>Лягушка</p1>
+                    <h1>1.100 р.</h1>
+                </div>
+
+        </div>
+{% include 'menu-karnaval.html' %}
+{% endblock %}
+</body>

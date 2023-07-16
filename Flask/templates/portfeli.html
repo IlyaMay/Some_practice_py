@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    {% block title %} <title>{{"Портфели"}}</title>{% endblock %}
+</head>
+<body>
+
+{% block page %}
+{{ super() }}
+        <div class="fon-porfeli">
+
+                <div class="towar-porfeli">
+                    <a href=""> <img src="static/img/port/1.jpg"></a>
+                    <p>Портфель "SuperCar"</p>
+                    <h1>4.500 р.</h1>
+                </div>
+
+                <div class="towar-porfeli">
+                    <a href=""> <img src="static/img/port/2.jpg"></a>
+                    <p>Портфель "Гол"</p>
+                    <h1>4.500 р.</h1>
+                </div>
+
+                <div class="towar-porfeli">
+                    <a href=""> <img src="static/img/port/3.jpg"></a>
+                    <p>Портфель "Джип"</p>
+                    <h1>4.000 р.</h1>
+                </div>
+
+                <div class="towar-porfeli">
+                    <a href=""> <img src="static/img/port/4.jpg" > </a>
+                    <p>Портфель "Йорк"</p>
+                    <h1>4.000 р.</h1>
+                </div>
+
+                <div class="towar-porfeli">
+                    <a href=""> <img src="static/img/port/5.jpg" > </a>
+                    <p>Портфель "Трансформер"</p>
+                    <h1>1.500 р.</h1>
+                </div>
+
+                <div class="towar-porfeli">
+                    <a href=""> <img src="static/img/port/6.jpg"> </a>
+                    <p>Портфель "Кошка белая" </p>
+                    <h1>4.000.р</h1>
+                </div>
+
+                <div class="towar-porfeli">
+                    <a href=""> <img src="static/img/port/7.jpg" ></a>
+                    <p>Рюкзак с мишкой</p>
+                    <h1>2.500 р.</h1>
+                </div>
+
+                <div class="towar-porfeli">
+                     <a href=""> <img src="static/img/port/8.jpg"></a>
+                     <p>Портфель "Тедди"</p>
+                     <h1>3.000р</h1>
+                </div>
+        </div>
+    {% include 'menu-main.html' %}
+{% endblock %}
+</body>
+</html>

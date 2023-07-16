@@ -1,0 +1,729 @@
+/*Убираю отступы на странице*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Фон*/
+
+html, body {
+    width:100%;
+    height:100%;
+    background:linear-gradient(to right,rgb(210, 212, 35),rgb(230, 112, 0));
+}
+
+/*Head*/
+
+.header {
+    width: 100%;
+    height: 125px;
+    top: 0;
+    position: absolute;
+}
+
+#menu {
+  margin-top:20px;
+  position: absolute;
+  right:245;
+  font-weight: bold;
+}
+#menu2 {
+  position: absolute;
+  right:155;
+  margin-top: 75px;
+  font-weight: bold;
+}
+
+.clsmenu a{
+margin-right:15px;
+font-size:50;
+text-decoration: none;
+list-style-type: none;
+color:#FFF
+}
+.clsmenu a:hover {
+color:blue  ;
+}
+
+
+
+
+
+
+/* Позиционирования Слова солнышко*/
+
+.sun{
+    text-decoration: none;
+    position:absolute;
+    float: left;
+    font-size: 90px; /* Размер шрифта в пикселах */
+    color: #fff;
+    margin-top:40px;
+    margin-left:288px;
+}
+/* Позиционирования солнышка*/
+.sun2 {
+    position:absolute;
+    left:160px;
+    top:5px;
+}
+
+/*page*/
+
+
+/*page-contact*/
+#text-contact{
+    position:absolute;
+    background:oldlace;
+    width:770px;
+    height:650px;
+    margin-top:200px;
+    margin-left:100px;
+}
+
+#text-contactu{
+    margin-left:20px;
+    margin-top:25px;
+}
+
+#text-contactu U {
+    font-size:40
+}
+
+#text-contactu p1 {
+    font-size:25
+}
+
+#text-contactu p4 {
+    font-size:27;
+}
+
+#text-contactu p3 {
+    font-size:27;
+    margin-left:217px;
+}
+
+#text-contactu h2 {
+    font-size:27;
+    margin-top:13px;
+}
+
+#text-contactu a{
+    margin-top:13px;
+    font-size:28;
+    color:#CC6666;
+}
+
+.otvz-img img{
+margin-left:25%;
+width:300px;
+height:200px;
+}
+
+
+/**Выпадающее Меню*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Карта*/
+.map{
+    background: url('../img/Map.png');
+    width:900px;
+    height:650px;
+    position:absolute;
+    left:870px;
+    top:200px;
+}
+
+
+/*hor*/
+
+/*ФОН */
+.picture-hor{
+    position:absolute;
+    background:#FEE1C3;
+    width: 70%;
+    height: 75%;
+    margin-left: 10%;
+    margin-top: 185px;
+}
+
+/*Размер избражений*/
+.picture-hor img{
+    width:180px;
+    height:280px;
+}
+
+.picture-hor p{
+    color:black;
+    font-size:20;
+}
+
+.picture-hor h1{
+    color:blue;
+    font-size:20;
+}
+/*Задаем блочно-строчное отображение*/
+.towar-hor {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-left:30px;
+    margin-top:10px;
+    width:180;
+ }
+
+/*Portfeli*/
+
+/*ФОН */
+
+.fon-porfeli{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin-top: 185px;
+}
+
+/*Размер избражений*/
+.fon-porfeli img{
+    width:200px;
+    height:280px;
+}
+
+.fon-porfeli p{
+    color:black;
+    font-size:20;
+}
+
+.fon-porfeli h1{
+    color:#dd6294;
+    font-size:20;
+}
+
+.towar-porfeli {
+    background:white;
+    display: inline-block;
+    text-align:center;
+    vertical-align:top;
+    border-style:ridge;
+    color:blue;
+    margin-left:145px;
+    margin-top:10px;
+    width:200;
+ }
+
+
+
+
+
+
+/*O nas*/
+
+.O-nas{
+    position:absolute;
+    width: 70%;
+    height: 80%;
+    margin-left: 15%;
+    margin-top: 185px;
+}
+
+.O-nas h1{
+    font-size:50;
+}
+
+.O-nas p{
+    text-indent: 55px;
+    font-size:30;
+    color:black;
+    margin-top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*menu*/
+.textmainmenu{
+background:black;
+}
+
+.textmainmenu a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+
+/*footer*/
+
+.footer {
+    background: #783c00;
+    height:42px;
+    color: #fff;
+    front-size:15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+}
+
+/*Расположение текста слева и права*/
+
+.leftstr{
+    float: left; /* Обтекание справа */
+    margin-top:8px;
+    margin-left:50px;
+   }
+
+.rightstr {
+    float: right; /* Выравнивание по правому краю */
+    margin-top:8px;
+    margin-right:50px;
+   }
+
+
+
+/* slaider */
+
+#i1, #i2, #i3, #i4{ display: none;}
+
+.slide{
+    margin-left:20%;
+    margin-top: 135px;
+    position: absolute;
+    width: auto;
+    height: 90%;
+	}
+/*размеры слайдера*/
+.slide_img {
+    position: absolute;
+    width: auto;
+    height: 95%;
+}
+
+.slide .slide_img img{
+    height: inherit;
+    height: inherit;
+}
+
+.prev, .next{
+    width: 10%;
+    height: inherit;
+    position: absolute;
+    top:0;
+    color:#black;
+    cursor: pointer;
+    text-align:center;
+}
+
+.next{right:8px;}
+.prev{left:-14;}
+
+label span{
+    position: absolute;
+    font-size: 80pt;
+    top: 40%;
+}
+
+.prev:hover, .next:hover{
+    transition: .3s;
+    background-color: rgba(88, 88, 89,.8);
+    color: #ffffff;
+}
+
+.slide_img{z-index: -1;}
+	#i1:checked ~ #one  ,
+	#i2:checked ~ #two  ,
+	#i3:checked ~ #three,
+	#i4:checked ~ #four
+	{z-index: 9; animation: scroll 1s ease-in-out;}
+
+	#i1:checked  ~  #nav_slide #dot1,
+	#i2:checked  ~  #nav_slide #dot2,
+	#i3:checked  ~  #nav_slide #dot3,
+	#i4:checked  ~  #nav_slide #dot4
+	{ background-color: rgba(255,255,255,.9);}
+
+
+/* Karnaval/*/
+
+.fon-karnaval{
+    position: absolute;
+    width: 80%;
+    margin-top: 175px;
+    margin-left: 10%;
+}
+
+/*Размер избражений*/
+.fon-karnaval  img{
+    width:250px;
+    height:340px;
+
+
+}
+
+.fon-karnaval  p{
+    color:#6f29cc;
+    font-size:25;
+    margin:10px;
+}
+
+.kar-kat {
+    display: inline-block;
+    vertical-align:top;
+    text-align:center;
+    margin-left:6%;
+    margin-top:10%;
+    width:250;
+    background:#F0E0E1;
+ }
+
+
+
+/* Karnaval-kategorii/*/
+
+.fon-karnaval-kategorii {
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 170px;
+    position:absolute;
+}
+
+/*Размер избражений*/
+.fon-karnaval-kategorii  img{
+    width:190px;
+    height:270px;
+}
+.fon-karnaval-kategorii p1{
+    color:black;
+    font-size:23;
+}
+
+.fon-karnaval-kategorii h1{
+    color:#dd6294;
+    font-size:20;
+}
+
+.towar-list {
+    display: inline-block;
+    vertical-align:top;
+    text-align:center;
+    margin-left:108px;
+    margin-top:10px;
+    width:190px;
+    border-style:ridge;
+    background:#F0E0E1;
+ }
+
+.karnaval-menu{
+    position:absolute;
+    right:0px;
+    margin-right:10px;
+    top:300px;
+}
+
+.karnaval-menu a{
+    text-decoration: none;}
+
+.karnaval-menu li{
+    margin-top:10px;
+    text-align:right;
+    list-style-type: none;
+    color:white;
+    font-size:25;
+}
+
+
+
+
+
+
+
+/* FORMA/*/
+
+.fon-form{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-top: 180px;
+}
+
+/*Размер избражений*/
+.fon-form img{
+    width:220px;
+    height:310px;
+    border-style:dashed;
+}
+
+.kat-form h1{
+    color:black;
+    font-size:20;
+    margin-top:5px;
+}
+
+.kat-form {
+    display: inline-block;
+    vertical-align:top;
+    text-align:center;
+    margin-left:45px;
+    width:250;
+ }
+
+.forma-menu{
+    position:absolute;
+    right:0px;
+    margin-right:10px;
+    top:300px;
+}
+
+.forma-menu a{
+text-decoration: none;}
+
+.forma-menu li{
+    margin-top:10px;
+    text-align:right;
+    list-style-type: none;
+    color:white;
+    font-size:25;
+}
+
+
+
+
+
+/*ОТЗЫВЫ*/
+
+.fon-otzv {
+    width: 100%;
+    height:77%;
+    margin-top: 180px;
+    background:#F9F9C9;
+    position:absolute;
+}
+
+.block-otziv{
+    font-family: Helvetica, Arial, sans-serif;
+    width: 50%;
+    float: left;
+}
+
+
+.fon-otzv h2{
+    margin-top:10px;
+    padding-left:33%;
+    font-size:31;
+    color:#CC6666;
+    padding-top:10px;
+}
+
+ul.list-otz {
+     list-style: none;
+     max-width: 90%;
+
+}
+ul.list-otz li {
+    margin: 20px 0 5px 25px;
+    border:2px solid #CC6666;
+}
+
+ul.list-otz .title {
+    padding: 10px 0 5px 10%;
+    font-size:25;
+    font-weight:bold;
+    color:#FF7400;
+    border-bottom: 3px dotted #CC6666;
+}
+
+ul.list-otz .annonce {
+    padding: 10px;
+    margin: 0 0 10px 5px;
+    font-size:22;
+    max-width: 50%;
+    height: 50px;
+    max-height: 10%;
+}
+
+
+
+/*block-form*/
+
+.block-form {
+  width: 50%;
+  float: left;
+  margin-top:10px;
+}
+
+/*flash msg*/
+
+.flash {
+    margin: 0 0 20px -10px;
+    padding: 10px 10px 10px 0;
+    text-align:center;
+    font-size:22;}
+
+
+.flash.success {
+         border: 1px solid #21DB56;
+         background: #AEFFC5;
+}
+.flash.error {
+         border: 1px solid #FF4343;
+         background: #FF9C9C;
+}
+
+/*Форма отзыва*/
+
+
+.block-form h1{
+    color:#CC6666;
+    margin: 0 33px 10px 35%;
+
+}
+
+.feedback-input {
+  color:Black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:450;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  margin-left: 5%;
+  width:90%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 90%;
+  margin-left: 5%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+[type="submit"]:hover { background:#CC4949; }
+
+
+.form-logion {
+      color:Black;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight:45;
+      font-size: 18px;
+      border-radius: 10px;
+      line-height: 50px;
+      background-color: transparent;
+      border:2px solid #CC6666;
+      transition: all 0.3s;
+      margin: 15% 0 0 40%;
+      width:25%;
+      box-sizing: border-box;
+      outline:0;
+}
+
+.form-logion p {
+      text-align:center;
+      font-size:20;
+}
+
+.form-logion #reg{
+    margin:15 25 25 25;
+    width: 50%;
+}
+
+.form-logion [type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 40%;
+  margin-left: 5%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:100;
+}

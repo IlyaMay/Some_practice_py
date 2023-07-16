@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+<html>
+<head>
+    {% block title -%}
+	<title>Отзывы</title>
+    {% endblock %}
+</head>
+
+<body>
+{% block page -%}
+
+    {% for cat, msg in get_flashed_messages(True) %}
+    <div class="flash {{cat}}">{{msg}}</div>
+    {% endfor %}
+
+<form class="form-post" action="" method="POST">
+      <p>Ваша статья:</p>
+      <input type="text" name="name" placeholder="Название" />
+      <textarea name="otvz"></textarea>
+      <input type="submit" value="добавить" />
+</form>
+
+
+
+
+    {% block footer %}
+        <footer class="footer">
+            <p class="leftstr">"Солнышко" одежда для школьников. © 2015-2021</p>
+            <p class="rightstr">Врема работы: Пн-Вс с 11:00 - 20:00 </p>
+        </footer>
+    {% endblock %}
+{% endblock -%}
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+<html>
+<head>
+    {% block title %} <title>{{"Карнавальные костюмы.Для мальчиков"}}</title>{% endblock %}
+</head>
+<body>
+{% block page %}
+{{ super() }}
+        <div class="fon-karnaval-kategorii">
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/3/1.jpg"></a>
+                    <p1>Гусар Бархат</p1>
+                    <h1>2.500 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/3/2.jpg"></a>
+                    <p1>Богатырь</p1>
+                    <h1>2.000 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/3/3.jpg"> </a>
+                    <p1>Ковбой</p1>
+                    <h1>2.000 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/3/4.jpg"> </a>
+                    <p1>Дарт Вейдер</p1>
+                    <h1>2.800 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/3/5.jpg"> </a>
+                    <p1>Звездочёт</p1>
+                    <h1>2.000 р.</h1>
+                </div>
+
+                <div class="towar-list">
+                    <a href=""> <img src="static/img/karnaval/3/6.jpg"> </a>
+                    <p1>Штурмовик</p1>
+                    <h1>2.200.р</h1>
+                </div>
+        </div>
+    {% include 'menu-karnaval.html' %}
+{% endblock %}
+</body>
+</html>

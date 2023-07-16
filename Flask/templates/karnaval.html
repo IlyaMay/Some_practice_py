@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+<html>
+<head>
+    {% block title %} <title>{{"Карнавальные костюмы"}}</title>{% endblock %}
+</head>
+
+<body>
+{% block page %}
+{{ super() }}
+        <div class="fon-karnaval">
+
+                <div class="kar-kat">
+                    <a href="/для девочек"> <img src="static/img/karnaval/1/1.jpg"></a>
+                    <p>Для девочек</p>
+                </div>
+
+                <div class="kar-kat">
+                    <a href="/фрукты"> <img src="static/img/karnaval/2/1.jpg"></a>
+                    <p>Фрукты Овощи Грибы</p>
+                </div>
+
+                <div class="kar-kat">
+                    <a href="/для мальчиков"> <img src="static/img/karnaval/3/4.jpg"></a>
+                    <p>Для мальчиков</p>
+                </div>
+
+                <div class="kar-kat">
+                    <a href="/звери"> <img src="static/img/karnaval/4/4.jpg"> </a>
+                    <p>Звери Птицы Насекомые</p>
+                </div>
+
+        </div>
+{% endblock %}
+</body>
+</html>

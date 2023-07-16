@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    {% block title %} <title>{{Авторизация}}</title>{% endblock %}
+</head>
+<body>
+{% block page %}
+
+    {% for cat, msg in get_flashed_messages(True) %}
+    <div class="flash {{cat}}">{{msg}}</div>
+    {% endfor %}
+
+    <form action="" method="post" class="form-logion">
+
+        <p><label>Email: </label> <input type="text" name="email" value=""  />
+        <p><label>Пароль: </label> <input type="password" name="psw" value=""  />
+        <p><input type="submit" value="Войти" />
+        <p><a href="{{url_for('register')}}">Регистрация</a>
+
+    </form>
+
+{% endblock %}
+
+</body>
+</html>

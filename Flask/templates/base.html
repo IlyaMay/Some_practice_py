@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    {% block title %} <title>{{"Магазин 'Солнышко'.Школьная форма"}}</title>{% endblock %}
+    <link type="text/css" href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
+</head>
+
+<body>
+{% block page %}
+    {% block header %}
+            <div class="header">
+                <H1 ><a class="sun" href="/">Cолнышко</a></H1>
+                    <a href="/"> <img src="static/img/sun2.png"  alt="Sun" width="185" height="185" class="sun2"></a>
+                        <div class="clsmenu">
+                            <div id="menu">
+                                <a href="Школьная форма">Школьная форма</a>
+                                <a href="Портфели">Портфели</a>
+                                <a href="О нас">О нас</a>
+
+                             </div>
+
+                            <div id="menu2" >
+                                <a href="Карнавальные костюмы">Карнавальные костюмы</a>
+                                <a href="Хор">Хор</a>
+                                <a href="Контакты">Контакты</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="dropbtn">Авторизация</button>
+                                  <div class="dropdown-content">
+                                    <a href="/login">Войти</a>
+                                    <a href="/register">Регистрация</a>
+                                    <a href="/Отзывы">Отзывы</a>
+                                  </div>
+                            </div>
+            </div>
+    {% endblock %}
+
+    {% block footer %}
+        <footer class="footer">
+            <p class="leftstr">"Солнышко" одежда для школьников. © 2015-2021</p>
+            <p class="rightstr">Врема работы: Пн-Вс с 11:00 - 20:00 </p>
+        </footer>
+    {% endblock %}
+{% endblock %}
+</body>
+</html>
